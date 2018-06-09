@@ -1,0 +1,86 @@
+.slots {
+
+}
+
+.slots-table {
+  width: 100%;
+
+  &--header {
+    width: 100%;
+
+    &-cell {
+      background-color: desaturate(darken($brown-paper, 20%), 30%);
+      padding-top: $rem(20px);
+      padding-bottom: $rem(20px);
+      color: $white;
+      vertical-align: bottom;
+
+      &__table-number {
+
+        width: $rem(110px);
+      }
+
+      &__action {
+        width: $rem(180px);
+      }
+
+      &__hours {
+        font-weight: 500;
+        font-size: $rem(26px);
+      }
+
+      &__minutes {
+        font-size: $rem(16px);
+        color: alpha($white, .5);
+      }
+    }
+  }
+
+  &--body {
+    width: 100%;
+
+    &-cell {
+      border-bottom: 1px solid $brown-paper;
+
+      &__table-number {
+        width: $rem(110px);
+        font-weight: 500;
+
+        span {
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          width: $rem(30px);
+          height: $rem(30px);
+          border-radius: 100px;
+          border: 2px solid $black;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      &__action {
+        width: $rem(180px);
+      }
+    }
+
+    &-checkbox {
+      display: none;
+    }
+
+    &-label {
+      display: block;
+      width: 100%;
+    }
+
+    &-check-area {
+      display: block;
+      width: 100%;
+      height: $rem(60px);
+    }
+
+    &-checkbox:checked + &-check-area {
+      background-color: $blue;
+    }
+  }
+}

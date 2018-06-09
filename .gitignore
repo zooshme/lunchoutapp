@@ -1,0 +1,4 @@
+node_modules/
+manifest/cache/
+manifest/logs/
+manifest/tmp/

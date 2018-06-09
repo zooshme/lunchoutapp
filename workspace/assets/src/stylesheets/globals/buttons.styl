@@ -1,0 +1,32 @@
+.button {
+  background-color: $orange;
+  border: 0 none transparent;
+  font-size: $rem(26px);
+  line-height: $rem(40px);
+  font-family: $bodyFont;
+  color: $black;
+  display: inline-block;
+  padding: $rem(5px) $rem(26px) $rem(10px);
+  font-weight: 400;
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $black;
+    color: $orange;
+  }
+
+  &__small {
+    background-color: $brown-paper;
+    font-size: $rem(16px);
+    line-height: $rem(30px);
+    padding: $rem(6px) $rem(26px) $rem(9px);
+    font-weight: 400;
+
+    &:hover {
+      background-color: desaturate(darken($brown-paper, 10%), 20%);
+      color: $black;
+    }
+  }
+}

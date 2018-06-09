@@ -1,0 +1,61 @@
+$heading-font = 'Tungsten Rounded A', 'Tungsten Rounded B', sans-serif;
+$body-font = 'Whitney A', 'Whitney B', sans-serif;
+$caption-font = 'WhitneyInd W R Bold A', 'WhitneyInd W R Bold B', sans-serif;
+
+$rem(value) {
+  unit((value/16), rem);
+}
+
+body {
+  font-family: $body-font;
+}
+
+h1, h2 {
+  font-family: $heading-font;
+}
+
+.page-title {
+  margin-top: $rem(30px);
+  margin-bottom: $rem(30px);
+  font-size: $rem(110px);
+  font-weight: 400;
+  line-height: $rem(110px);
+  display: block;
+  margin-bottom: $rem(10px);
+
+  span {
+    font-size: $rem(42px);
+    line-height: $rem(50px);
+    display: block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    // text-transform: uppercase;
+  }
+}
+
+.page-description {
+  font-size: $rem(26px);
+  line-height: $rem(35px);
+  margin-bottom: $rem(50px);
+}
+
+.page-header {
+  background-color: $brown-paper;
+  padding-top: $rem(30px);
+  padding-bottom: $rem(50px);
+}
+
+.section-title {
+  font-size: $rem(16px);
+  font-weight: 600;
+  line-height: $rem(30px);
+  text-transform: uppercase;
+  margin-bottom: $rem(10px);
+}
+
+.card-title {
+  font-family: $heading-font;
+  font-size: $rem(42px);
+  font-weight: 500;
+}
